@@ -1,0 +1,54 @@
+* { /* con asterisco indicamos que es para el sitio total*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 22px;
+}
+
+/*HEAD*/
+
+.contenido-header {  /*Imagen fondo mujer*/
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg-girl.jpeg');
+    background-position: center; /*Centramos imagen*/
+    background-size: cover; /*Respeta el ancho de la imagen, el alto puedes cortar*/
+    background-attachment: fixed; /*scroll*/
+}
+
+.contenido-header .fondo { /*IMAGEN FLORES*/
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url('../img/bg-top.png');
+}
+
+.contenido-header .texto { /*texto entrada*/
+    width: 100vw; /*no abarques el 100% del contenedor, sino de la pantalla - calc (100vw - 20px);*/
+    height: 100vh; /*vh: que sea el alto de la pantalla-dispositivo*/
+    font-size: 90px;
+    font-weight: 400; /*400 tomado de google*/
+    font-family: 'Noto Serif', serif; /*El segundo parametro es por si no encuentro el primero*/
+    font-style: italic;
+    display: flex;
+    align-items: center; /*centramos/alineamos en forma vertical*/
+    justify-content: center;
+    color: purple;
+    mix-blend-mode: multiply; /*texto transparente*/
+}

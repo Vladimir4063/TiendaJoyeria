@@ -29,7 +29,7 @@ p {
     background-image: url('../img/bg-girl.jpeg');
     background-position: center; /*Centramos imagen*/
     background-size: cover; /*Respeta el ancho de la imagen, el alto puedes cortar*/
-    background-attachment: fixed; /*scroll*/
+    background-attachment: fixed; /*scroll: el contenido queda pegado arriba*/
 }
 
 .contenido-header .fondo { /*IMAGEN FLORES*/
@@ -52,3 +52,52 @@ p {
     color: purple;
     mix-blend-mode: multiply; /*texto transparente*/
 }
+
+/*NAVIGATION / MENU*/
+
+.menu {
+    background-color: var(--purple-medium);
+    width: 100%;
+    position: sticky; /*El navegador se mantiene estatico con scroll, (abajo)*/
+    top: 0; /*Este tambien es importante para posicionar fijo el nav*/ 
+    padding: 5px;
+    z-index: 999;
+    text-align: center; /*Alineamos al centro*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.menu a {
+    display: inline-block; /*Quitamos el detalle azul del enlace*/
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: var(--purple-medium);
+    margin: 0 10px; /*Arriba y abajo 0px, a los costados 10px*/
+    transition: .5s ease all; /*cambio color del fondo*/
+    color: var(--gray-light);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    transform: translateY(18px); /*Traslada la caja hacia abajo 18px*/
+    background-color: var(--purple-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

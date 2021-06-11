@@ -6,5 +6,4 @@ window.onscroll = () => {
     if(anchoFondo <= 100){
         fondo.style.width = anchoFondo + '%';
     }
-    
 }

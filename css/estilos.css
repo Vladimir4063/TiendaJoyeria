@@ -56,7 +56,7 @@ p {
 /*NAVIGATION / MENU*/
 
 .menu {
-    background-color: var(--purple-medium);
+    background-color: var(--purple-medium); /*Color bg*/
     width: 100%;
     position: sticky; /*El navegador se mantiene estatico con scroll, (abajo)*/
     top: 0; /*Este tambien es importante para posicionar fijo el nav*/ 
@@ -70,13 +70,14 @@ p {
     margin-bottom: 60px;
 }
 
-.menu a {
+/*ENLACES*/
+.menu a { 
     display: inline-block; /*Quitamos el detalle azul del enlace*/
     padding: 10px 30px;
     font-size: 26px;
     background-color: var(--purple-medium);
     margin: 0 10px; /*Arriba y abajo 0px, a los costados 10px*/
-    transition: .5s ease all; /*cambio color del fondo*/
+    transition: .5s ease all; /* transicion de movimiento y cambio color del fondo, para todas las propiedades*/
     color: var(--gray-light);
     text-decoration: none;
 }

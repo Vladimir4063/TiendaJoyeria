@@ -91,15 +91,68 @@ p {
 SECCION : NOSOTROS
 */
 
+.nosotros {
+    margin-bottom: 60px;
+}
 
+.subtitulo {
+    font-size: 20px;
+    color: var(--purple-dark);
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    z-index: 2; /*Aseguro que el sub, quede arriba del text*/
+    text-transform: uppercase; /*Todo el texto a mayus*/
+    margin-bottom: 20px;
+}
 
+.subtitulo span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
 
+.subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--purple-dark);
+    position: relative;
+    top: -14px;
+    z-index: 1;
+}
 
+.nosotros .titulo, .productos .titulo {
+    width: 70%;
+    font-size:  44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
 
+.nosotros .enlace {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--purple-light);
+    font-weight: 700;
+    border-bottom: 10px solid transparent; /*Transparencia*/
+    transition: .3s ease all;
+}
 
+.nosotros .enlace:hover {
+    text-decoration: none; /*quito subrayado del enlace*/
+    letter-spacing: 3px; /*Expancion del texto*/
+    border-bottom: 1px solid var (var(--purple-light));
+}
 
+/*PRODUCTOS*/
 
-
+.productos {
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
 
 
 

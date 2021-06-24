@@ -154,6 +154,46 @@ SECCION : NOSOTROS
     margin-bottom: 60px;
 }
 
+.productos .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
 
+.productos .producto {
+    position: relative; /*esto permite mover el texto*/
+    width: 100%;
+}
 
+.productos .overlay {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--purple-light);
+    overflow: hidden; 
+    transition: .5s ease;
+}
+
+.productos .producto:hover .overlay { /*Transicion al pasar el mouse por los productos*/
+    width: 100%;
+    opacity: .8;
+}
+
+.productos .producto .overlay-texto { /*texto en la transicion overlay*/
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap; /*Hara que todo este en una linea de texto*/
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%); /*traslada el texto a las coordenas indicadas*/
+    overflow: hidden; /*el texto sobrante ocultalo*/
+    border-top: 1px solid #fff;
+    border-bottom:  1px solid #fff;
+}
 

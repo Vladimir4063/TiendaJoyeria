@@ -51,6 +51,7 @@ p {
     justify-content: center;
     color: purple;
     mix-blend-mode: multiply; /*texto transparente*/
+    text-align: center;
 }
 
 /*NAVIGATION / MENU*/
@@ -197,3 +198,18 @@ SECCION : NOSOTROS
     border-bottom:  1px solid #fff;
 }
 
+.productos .btn-productos {
+    background-color: var(--purple-light);
+	color: #fff;
+	padding: 7px 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	border: 2px solid transparent;
+	transition: .3s ease;
+}
+
+.productos .btn-productos:hover {
+    background-color: transparent;
+    border: 2px solid var(--purple-light);
+    color: var(--purple-light);
+}

@@ -223,7 +223,7 @@ SECCION : NOSOTROS
     background-position: center; /*Centramos imagen*/
     background-size: cover;
     background-attachment: fixed; /*la imagen queda pegada*/
-    margin-bottom: 1000px;
+    margin-bottom: 60px;
 }
 
 .separador p { /*Texto del separador*/
@@ -235,4 +235,22 @@ SECCION : NOSOTROS
     font-size: 24px;
     font-family: 'Noto Serif', serif;
     padding: 10px;
+}
+/* ********* */
+/* ACERCA DE */
+
+.acerda-de {
+    margin-bottom: 60px;
+}
+
+/* GALERIA DE FOTOS */
+
+.galeria {
+    margin-bottom: 60px;
+}
+
+.galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Acomodalo si tiene desborde, pero sin perder proporcion*/
 }
